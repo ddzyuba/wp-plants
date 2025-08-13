@@ -1,0 +1,27 @@
+.footer__columns {
+	.wp-block-heading {
+		margin-bottom: 40px;
+	}
+
+	.wp-block-group {
+		@media (max-width: 767px) {
+			margin-bottom: 30px;
+		}
+	}
+
+	.wp-block-group:last-of-type {
+		@media (max-width: 767px) {
+			margin-bottom: 0;
+		}
+	}
+
+	@media (max-width: 767px) {
+		grid-template-columns: repeat(1, minmax(0, 1fr));
+	}
+}
+
+.footer__copyright-wrapper {
+	@media (max-width: 767px) {
+		flex-direction: column;
+	}
+}

@@ -1,0 +1,10 @@
+.block-scrolling-logos {
+    &__container {
+        .block-editor-block-list__layout {
+            display: flex;
+            gap: 120px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    }
+}

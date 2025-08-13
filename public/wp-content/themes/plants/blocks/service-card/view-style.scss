@@ -1,0 +1,55 @@
+.block-service-card__link {
+    display: block;
+    position: absolute;
+    content: "";
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: background .5s;
+}
+
+.block-service-card__image-2 {
+    display: none !important;
+    margin-top: 0 !important;
+}
+
+.wp-block-plants-service-card {
+
+    .wp-block-heading,
+    p {
+        transition: color .5s;
+    }
+}
+
+.wp-block-plants-service-card:hover {
+    background: var(--wp--preset--color--green);
+
+    .wp-block-heading,
+    p {
+        color: var(--wp--preset--color--white) !important;
+    }
+
+    .block-service-card__image-1 {
+        display: none;
+    }
+
+    .block-service-card__image-2 {
+        display: table !important;
+    }
+}
+
+.services-wrapper {
+    @media (max-width: 1250px) {
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    }
+
+    @media (max-width: 950px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    @media (max-width: 600px) {
+        grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+    }
+}

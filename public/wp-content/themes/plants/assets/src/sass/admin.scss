@@ -1,0 +1,7 @@
+@import "constants/list";
+@import "~rfs/sass";
+@import "mixins/list";
+
+.block-editor-url-input {
+	min-width: unset;
+}

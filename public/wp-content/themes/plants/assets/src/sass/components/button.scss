@@ -1,0 +1,24 @@
+.wp-element-button {
+	transition: color 0.1s, background 0.3s;
+}
+
+.wp-element-button:hover {
+	border: 1px solid var(--wp--preset--color--green);
+	background: var(--wp--preset--color--white) !important;
+	color: var(--wp--preset--color--green);
+}
+
+.is-style-call-us > a {
+	position: relative;
+}
+
+.is-style-call-us > a::before {
+	position: absolute;
+	top: 10px;
+	left: 30px;
+	content: url("../img/phone-white.svg");
+}
+
+.is-style-call-us > a:hover::before {
+	content: url("../img/phone-green.svg");
+}

@@ -1,0 +1,17 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "title": "Projects Block",
+    "description": "The block shows projects with pagination and category filter.",
+    "textdomain": "plants",
+    "name": "plants/projects",
+    "icon": "feedback",
+    "category": "plants-theme",
+    "supports": {
+        "html": false
+    },
+    "editorScript": "file:./index.js",
+    "style": "file:./style.css",
+    "viewScript": "file:./view.js",
+    "render": "file:./markup.php"
+}

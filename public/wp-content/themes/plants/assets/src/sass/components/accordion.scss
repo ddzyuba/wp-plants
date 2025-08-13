@@ -1,0 +1,50 @@
+.innocode-block-accordion-item {
+	margin-bottom: 43px;
+	border: none;
+}
+
+.innocode-block-accordion-item:last-of-type {
+	margin-bottom: 0;
+}
+
+.innocode-block-accordion-item__header {
+	display: block;
+	border: none;
+	border-radius: 5px;
+	background: #fff8f1;
+	cursor: pointer;
+	padding: 13px 30px;
+	width: 100%;
+	text-align: left;
+}
+
+.innocode-block-accordion-item__title {
+	transition: color 0.3s;
+	color: var(--wp--preset--color--dark);
+}
+
+.innocode-block-accordion-item__content {
+	color: var(--wp--preset--color--gray);
+}
+
+.innocode-block-accordion-item__button::before,
+.innocode-block-accordion-item__button::after {
+	transition: background 0.3s;
+	background: var(--wp--preset--color--dark);
+}
+
+.innocode-block-accordion-item_is-opened {
+	.innocode-block-accordion-item__header {
+		transition: background 0.3s;
+		background: var(--wp--preset--color--green);
+	}
+
+	.innocode-block-accordion-item__title {
+		color: var(--wp--preset--color--white);
+	}
+
+	.innocode-block-accordion-item__button::before,
+	.innocode-block-accordion-item__button::after {
+		background: var(--wp--preset--color--white);
+	}
+}

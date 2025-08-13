@@ -1,0 +1,42 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "title": "Project info",
+    "description": "Block shows main information about a project.",
+    "textdomain": "plants",
+    "name": "plants/project-info",
+    "icon": "feedback",
+    "category": "plants-theme",
+    "attributes": {
+        "client": {
+            "type": "string"
+        },
+        "location": {
+            "type": "string"
+        },
+        "startDate": {
+            "type": "string"
+        },
+        "endDate": {
+            "type": "string"
+        },
+        "price": {
+            "type": "string"
+        }
+    },
+    "example": {
+        "attributes": {
+            "title": "Indu Designers",
+            "location": "27 Division St, New York, NY 10002, USA",
+            "startDate": "2023-01-01",
+            "endDate": "2023-01-31",
+            "price": "500$"
+        }
+    },
+    "supports": {
+        "html": false
+    },
+    "editorScript": "file:./index.js",
+    "render": "file:./markup.php",
+    "style": "file:./style.css"
+}

@@ -1,0 +1,42 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "title": "Skill",
+    "description": "Block shows a skill like a horizontal range element",
+    "textdomain": "plants",
+    "name": "plants/skill",
+    "icon": "feedback",
+    "category": "plants-theme",
+    "attributes": {
+        "title": {
+            "type": "string"
+        },
+        "skill": {
+            "type": "number"
+        }
+    },
+    "example": {
+        "attributes": {
+            "title": "Some title",
+            "skill": 85
+        }
+    },
+    "supports": {
+        "color": {
+            "text": true,
+            "background": false
+        },
+        "html": false,
+        "spacing": {
+            "margin": [
+                "top",
+                "bottom"
+            ],
+            "padding": true,
+            "blockGap": false
+        }
+    },
+    "editorScript": "file:./index.js",
+    "render": "file:./markup.php",
+    "style": "file:./style.css"
+}

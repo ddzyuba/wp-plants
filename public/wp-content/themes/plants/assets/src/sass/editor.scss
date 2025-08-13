@@ -1,0 +1,28 @@
+@import "constants/list";
+@import "~rfs/sass";
+@import "mixins/list";
+
+// @import "normalize.css";
+@import "components/list";
+
+.editor-styles-wrapper {
+	.staff {
+		&__item {
+			transition: padding-bottom 0.3s;
+
+			.wp-block-cover__background {
+				top: 0;
+				bottom: 0;
+				height: 100%;
+			}
+
+			.staff__social-links {
+				display: flex;
+			}
+		}
+
+		&__item:hover {
+			padding-bottom: 1rem;
+		}
+	}
+}

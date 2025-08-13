@@ -1,0 +1,30 @@
+.wp-block-plants-skill {
+    width: 100%;
+}
+
+.wp-block-skill {
+    &__text-wrapper {
+        color: var(--wp--preset--color--dark);
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__percentage-wrapper {
+        background: var(--wp--preset--color--white);
+        box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.18);
+        border-radius: 21px;
+        height: 20px;
+    }
+
+    &__percentage {
+        height: 16px;
+        position: relative;
+        top: 2px;
+        left: 2px;
+        background: var(--wp--preset--color--green);
+        border-radius: 8px;
+    }
+}

@@ -1,0 +1,33 @@
+@keyframes scroll-x {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-100% - 120px));
+    }
+}
+
+.wp-block-plants-scrolling-logos {
+    display: flex;
+    gap: 120px;
+    overflow: hidden;
+    user-select: none;
+}
+
+.block-scrolling-logos {
+    &__container {
+        display: flex;
+        gap: 120px;
+        align-items: center;
+        justify-content: space-around;
+        min-width: 100%;
+        animation: scroll-x 60s linear infinite;
+        flex-shrink: 0;
+
+        .wp-block-image {
+            flex-shrink: 0;
+            margin: 0;
+        }
+    }
+}

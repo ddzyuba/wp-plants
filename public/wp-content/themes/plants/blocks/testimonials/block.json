@@ -1,0 +1,51 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "title": "Testimonials",
+  "description": "Block shows testimonials in carousel",
+  "textdomain": "plants",
+  "name": "plants/testimonials",
+  "icon": "feedback",
+  "category": "plants-theme",
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "string"
+    },
+    "details": {
+      "type": "array",
+      "default": []
+    }
+  },
+  "example": {
+    "attributes": {
+      "title": "Some title",
+      "text": "Some text"
+    }
+  },
+  "supports": {
+    "color": {
+      "text": false,
+      "background": true
+    },
+    "html": false,
+    "spacing": {
+      "margin": [
+        "top",
+        "bottom"
+      ],
+      "padding": true,
+      "blockGap": false
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.css",
+  "render": "file:./markup.php",
+  "viewScript": "file:./view.js",
+  "style": [
+    "file:./style.css",
+    "swiper-bundle"
+  ]
+}

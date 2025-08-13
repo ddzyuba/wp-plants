@@ -1,0 +1,33 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "title": "Service card",
+    "description": "Block shows a card for services section",
+    "textdomain": "plants",
+    "name": "plants/service-card",
+    "icon": "feedback",
+    "category": "plants-theme",
+    "attributes": {
+        "title": {
+            "type": "string"
+        },
+        "link": {
+            "type": "string"
+        }
+    },
+    "parent": [
+        "core/columns",
+        "core/group"
+    ],
+    "supports": {
+        "html": true,
+        "spacing": {
+            "padding": true
+        }
+    },
+    "editorScript": "file:./index.js",
+    "editorStyle": "file:./editor.css",
+    "render": "file:./markup.php",
+    "style": "file:./style.css",
+    "viewStyle": "file:./view-style.css"
+}

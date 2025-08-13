@@ -1,0 +1,40 @@
+.staff {
+	&__item {
+		transition: padding-bottom 0.3s;
+
+		.wp-block-cover__background {
+			top: unset;
+			bottom: 0;
+			transition: height 0.3s;
+			height: 100px;
+		}
+
+		.staff__social-links {
+			display: none;
+		}
+	}
+
+	&__item:hover {
+		padding-bottom: 150px;
+
+		.wp-block-cover__background {
+			height: 100%;
+		}
+
+		.staff__social-links {
+			display: flex;
+		}
+	}
+
+	@media (max-width: 1250px) {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+
+	@media (max-width: 900px) {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	@media (max-width: 600px) {
+		grid-template-columns: repeat(1, minmax(0, 1fr));
+	}
+}

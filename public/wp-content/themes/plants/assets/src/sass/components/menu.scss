@@ -1,0 +1,8 @@
+.wp-block-navigation__responsive-container-open svg,
+.wp-block-navigation__responsive-container-close svg {
+	fill: var(--wp--preset--color--green);
+}
+
+.current-menu-item {
+	color: var(--wp--preset--color--green) !important;
+}

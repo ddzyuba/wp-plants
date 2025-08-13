@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "title": "Scrolling logos",
+  "description": "Block shows scrolling logos on front-end",
+  "textdomain": "plants",
+  "name": "plants/scrolling-logos",
+  "icon": "feedback",
+  "category": "plants-theme",
+  "attributes": {},
+  "supports": {
+    "html": false,
+    "spacing": {
+      "margin": [
+        "top",
+        "bottom"
+      ],
+      "padding": true,
+      "blockGap": false
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./editor.css",
+  "render": "file:./markup.php",
+  "viewStyle": "file:./style.css"
+}

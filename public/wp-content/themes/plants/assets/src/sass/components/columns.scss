@@ -1,0 +1,15 @@
+.group-in-column-no-side-padding-mobile {
+	@media (max-width: 781px) {
+		padding-right: 0 !important;
+		padding-left: 0 !important;
+	}
+}
+
+.we-have-solutions__group {
+	@media (max-width: 900px) {
+		flex-direction: column;
+		justify-content: center;
+		padding: 2rem !important;
+		text-align: center;
+	}
+}
