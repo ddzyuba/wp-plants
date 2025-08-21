@@ -250,5 +250,13 @@
                 "post"
             ]
         }
+    ],
+    "patterns": [
+        "about",
+        "logos",
+        "staff",
+        "we-have-solutions",
+        "working-process",
+        "why-choose-us"
     ]
 }

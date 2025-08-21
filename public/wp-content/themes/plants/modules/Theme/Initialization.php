@@ -195,6 +195,18 @@ class Initialization extends AbstractThemeInitialization {
 	/**
 	 * @return void
 	 */
+	public function register_pattern_category() {
+		add_action( 'init', function() {
+			register_block_pattern_category(
+				'plants-theme',
+				[ 'label' => __( 'Plants theme', 'plants' ) ]
+			);
+		} );
+	}
+
+	/**
+	 * @return void
+	 */
 	public function register_theme_block_styles() {
 		add_action( 'init', function() {
 			register_block_style(
