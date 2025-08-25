@@ -10,12 +10,22 @@ domReady(() => {
   
   init();
 
+  /**
+	 * Init function.
+	 *
+	 * @return void
+	 */
   function init() {
     handleFilterButtons();
     handlePaginationLinks();
     handlePopstateEvent();
   }
 
+  /**
+	 * Handle filter buttons.
+	 *
+	 * @return void
+	 */
   function handleFilterButtons() {
     // const buttons = document.querySelectorAll('.block-projects__filter-button');
     // const url = new URL(window.location);
@@ -51,6 +61,11 @@ domReady(() => {
     }
   }
 
+  /**
+	 * Handle pagination links.
+	 *
+	 * @return void
+	 */
   function handlePaginationLinks() {
     const paginationLinks = document.querySelectorAll('.block-projects__pagination a');
 
@@ -106,6 +121,11 @@ domReady(() => {
     }
   }
 
+  /**
+	 * Handle popstate event, while navigating back/forward in browser.
+	 *
+	 * @return void
+	 */
   function handlePopstateEvent() {
 
     window.addEventListener('popstate', async () => {
@@ -144,6 +164,13 @@ domReady(() => {
     });
   }
 
+  /**
+	 * Get projects.
+	 *
+	 * @param string  termId    Id of project CPT taxonomy.
+	 * @param int     page      Page parameter for pagination.
+	 * @return object
+	 */
   async function getProjects(termId = '0', page = 1) {
     let url = `${siteData.siteUrl}/wp-json/wp/v2/project?per_page=4&page=${page}`;
 
@@ -176,6 +203,12 @@ domReady(() => {
     }
   }
 
+  /**
+	 * Get HTML.
+	 *
+	 * @param array     data   Array with projects data.
+	 * @return string          String with HTML.
+	 */
   function getHtml(data) {
     let html = '';
     data.forEach((el) => {
@@ -193,6 +226,14 @@ domReady(() => {
     return html;
   }
 
+  /**
+	 * Set new URL, in browser.
+	 *
+	 * @param object  url   instance of URL class.
+	 * @param string  slug  Filter slug.
+	 * @param int     page  Page parameter for pagination.
+	 * @return void
+	 */
   function setNewUrl(url, slug, page = 1) {
     let newUrl = '';
 
@@ -226,6 +267,13 @@ domReady(() => {
     }
   }
 
+  /**
+	 * Change active filter button.
+	 *
+	 * @param array  buttons  Array of selected HTML.
+	 * @param string filter   Filter slug.
+	 * @return void
+	 */
   function changeActiveButton(buttons, filter) {
     buttons.forEach((b) => {
       if (b.getAttribute('data-slug') === filter) {
@@ -238,6 +286,14 @@ domReady(() => {
     });
   }
 
+  /**
+	 * Update pagination.
+	 *
+	 * @param int     wpTotalPages  Number of total pages in WP Query.
+	 * @param int     page          Page parameter for pagination.
+	 * @param string  filter        Filter slug.
+	 * @return void
+	 */
   function updatePagination(wpTotalPages, page = 1, filter = '') {
 
     const paginationWrapper = document.querySelector('.block-projects__pagination');
@@ -344,6 +400,12 @@ domReady(() => {
     handlePaginationLinks();
   }
 
+  /**
+	 * Get filter slug from URL.
+	 *
+	 * @param string   str  URL.
+	 * @return string       Filter slug.
+	 */
   function getFilterFromUrl(str) {
 
     // Match "/filter/..." optionally followed by "/page/{number}"
