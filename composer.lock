@@ -3410,15 +3410,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-crontrol",
-            "version": "1.19.1",
+            "version": "2.0.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wp-crontrol/",
-                "reference": "tags/1.19.1"
+                "reference": "tags/2.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-crontrol.1.19.1.zip"
+                "url": "https://downloads.wordpress.org/plugin/wp-crontrol.2.0.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -4254,6 +4254,6 @@
     "platform": {
         "php": ">=7.4"
     },
-    "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "platform-dev": {},
+    "plugin-api-version": "2.9.0"
 }
