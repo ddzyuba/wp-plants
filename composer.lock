@@ -3302,15 +3302,15 @@
         },
         {
             "name": "wpackagist-plugin/mailgun",
-            "version": "2.1.9",
+            "version": "2.2.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/mailgun/",
-                "reference": "tags/2.1.9"
+                "reference": "tags/2.2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/mailgun.2.1.9.zip"
+                "url": "https://downloads.wordpress.org/plugin/mailgun.2.2.3.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
@@ -4254,6 +4254,6 @@
     "platform": {
         "php": ">=7.4"
     },
-    "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "platform-dev": {},
+    "plugin-api-version": "2.9.0"
 }
